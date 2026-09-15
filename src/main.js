@@ -12,6 +12,7 @@ import { renderFooter } from './sections/footer.js'
 import { renderWelcomeScreen, initWelcomeScreen } from './modules/welcomeScreen.js'
 import { renderErrorScreen, initErrorScreen } from './modules/errorScreen.js'
 import { initAudio, reproducirMusica } from './modules/audioController.js'
+import { initMobileMenu } from './modules/mobileMenu.js'
 
 document.querySelector('#app').innerHTML = `
   ${renderWelcomeScreen()}
@@ -35,6 +36,7 @@ document.querySelector('#app').innerHTML = `
 `
 
 createIcons({ icons })
+initMobileMenu()
 initAudio()
 initWelcomeScreen(reproducirMusica)
 initErrorScreen()

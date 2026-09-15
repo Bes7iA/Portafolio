@@ -1,3 +1,10 @@
+// Sección de encabezado: nombre, foto y presentación inicial.
+//
+// La foto usa dos <img> superpuestas: la primera visible por defecto, la
+// segunda oculta y desenfocada (opacity-0 blur-md), que se revela con blur
+// y fade al hacer hover sobre el contenedor (clases group-hover/avatar:...).
+// Es un efecto puramente CSS, sin JavaScript involucrado.
+
 export function renderHero() {
     return `
     <section class="bg-arcade-navy/45 backdrop-blur-md border-[3px] border-arcade-border shadow-[6px_6px_0px_#000000] p-6 sm:p-10 relative overflow-hidden">

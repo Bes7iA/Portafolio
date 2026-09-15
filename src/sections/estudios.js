@@ -1,3 +1,6 @@
+// Formación académica — honesta sobre que el bootcamp está en curso y sin
+// certificación todavía, sin inflar el nivel real alcanzado.
+
 export function renderEstudios() {
     return `
     <section id="estudios" class="bg-arcade-navy/45 backdrop-blur-md border-[3px] border-arcade-border shadow-[6px_6px_0px_#000000] p-6 sm:p-8 space-y-5">

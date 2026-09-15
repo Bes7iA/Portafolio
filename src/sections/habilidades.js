@@ -1,3 +1,10 @@
+// Habilidades técnicas, generadas desde un array de datos en vez de HTML
+// repetido a mano. Para agregar/quitar una habilidad, solo se edita el
+// array `skills` — no hace falta tocar el HTML de las tarjetas.
+//
+// Los nombres en `icon` corresponden 1 a 1 con nombres de íconos de Lucide
+// (ver https://lucide.dev/icons para la lista completa).
+
 export function renderHabilidades() {
     const skills = [
         {
@@ -31,6 +38,11 @@ export function renderHabilidades() {
             desc: 'Diseño de reglas, mecánicas y narrativa para proyectos propios (ver sección Proyectos), aplicando lógica y resolución creativa de problemas.'
         },
     ]
+
+    // .map() recorre cada objeto de `skills` y genera su tarjeta HTML;
+    // .join('') pega todos los bloques en un solo string, porque .map()
+    // por sí solo devuelve un array, no un string listo para insertar.
+
 
     const cards = skills.map(s => `
     <div class="p-4 bg-black/50 border-2 border-arcade-border shadow-[3px_3px_0px_#000000] space-y-2 hover:border-arcade-link transition-colors">

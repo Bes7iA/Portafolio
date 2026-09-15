@@ -1,3 +1,7 @@
+// Presentación personal: trayectoria laboral e intereses fuera de la
+// programación. El texto está redactado para conectar explícitamente cada
+// experiencia con una habilidad transferible al desarrollo de software.
+
 export function renderSobreMi() {
     return `
     <section id="sobre-mi" class="bg-arcade-navy/45 backdrop-blur-md border-[3px] border-arcade-border shadow-[6px_6px_0px_#000000] p-6 sm:p-8 space-y-6">

@@ -1,3 +1,7 @@
+// Experiencia laboral — sin experiencia previa en programación todavía;
+// esta sección comunica habilidades blandas transferibles (trabajo en
+// equipo, cumplimiento de plazos) en vez de fingir experiencia técnica.
+
 export function renderExperiencia() {
     return `
     <section id="experiencia" class="bg-arcade-navy/45 backdrop-blur-md border-[3px] border-arcade-border shadow-[6px_6px_0px_#000000] p-6 sm:p-8 space-y-5">

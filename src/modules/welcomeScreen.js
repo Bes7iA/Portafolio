@@ -1,3 +1,11 @@
+// Pantalla de bienvenida (landing negra con el botón "Entrar") y la
+// transición animada hacia el sitio real.
+//
+// Patrón render/init: render() devuelve el HTML (se inserta una sola vez,
+// junto con el resto del sitio, en main.js). init() se llama DESPUÉS de esa
+// inserción y le agrega el comportamiento — porque necesita encontrar el
+// botón #btn-entrar en el DOM, que hasta ese momento no existe todavía.
+
 export function renderWelcomeScreen() {
     return `
     <div id="pantalla-bienvenida" class="fixed inset-0 bg-black flex justify-center items-center z-[999999]">
@@ -13,6 +21,11 @@ export function renderWelcomeScreen() {
   `
 }
 
+// onEnter: función que se ejecuta al hacer clic, ANTES de la transición
+// (en este proyecto, siempre es reproducirMusica — ver main.js). Se recibe
+// como parámetro en vez de importar audioController directamente aquí,
+// para que este módulo no necesite saber nada de audio: solo avisa "el
+// usuario entró" y quien lo llama decide qué hacer con eso.
 export function initWelcomeScreen(onEnter) {
     const btnEntrar = document.getElementById('btn-entrar')
     if (!btnEntrar) return
@@ -20,6 +33,11 @@ export function initWelcomeScreen(onEnter) {
     btnEntrar.addEventListener('click', () => {
         if (onEnter) onEnter()
 
+        // View Transitions API: captura el estado "antes" (pantalla negra) y
+        // "después" (sitio visible), y anima el cambio entre ambos usando las
+        // reglas @keyframes definidas en style.css. No todos los navegadores
+        // la soportan todavía, por eso el fallback en el else: sin animación,
+        // pero el sitio igual funciona.
         if (document.startViewTransition) {
             document.startViewTransition(() => {
                 document.body.classList.add('sistema-encendido')

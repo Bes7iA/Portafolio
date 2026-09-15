@@ -1,4 +1,10 @@
-import { activarFallaSistema } from './audioController.js'
+// Pantalla de "pantallazo azul" (easter egg del botón Salir del footer).
+//
+// A diferencia de welcomeScreen, la MUESTRA/OCULTA de esta pantalla no la
+// controla JavaScript directamente — la controla el CSS vía :target (ver
+// .capa-error-imagen:target en style.css), activado por el propio navegador
+// cuando la URL cambia a "#error-fatal" (el link del botón "Salir" en
+// footer.js apunta ahí). JavaScript solo se encarga del efecto de sonido.
 
 export function renderErrorScreen() {
     return `
@@ -13,6 +19,9 @@ export function initErrorScreen() {
     if (!btnSalir) return
 
     btnSalir.addEventListener('click', (evento) => {
+        // Sin este stopPropagation, el clic "burbujea" hasta el listener global
+        // del body en audioController.js, que intentaría reanudar la música
+        // justo cuando se supone que el "sistema" se está cayendo.
         evento.stopPropagation()
         activarFallaSistema()
     })

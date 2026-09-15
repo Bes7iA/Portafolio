@@ -1,3 +1,8 @@
+// Sección de proyectos personales, dividida en dos categorías:
+// "Desarrollo" (código propio, sin ejercicios grupales de clase) y
+// "Proyectos Creativos" (juegos de mesa/rol diseñados por mí, aunque
+// no sean el foco técnico del portafolio).
+
 const desarrollo = [
     {
         titulo: 'Máquinas de Guerra',
@@ -27,6 +32,10 @@ const creativos = [
         ],
     },
 ]
+
+// Genera los botones de enlace (repositorio, jugar, descargar) de una
+// tarjeta de proyecto. Reutilizada tanto por renderDesarrolloCard como
+// por renderCreativoCard para no duplicar este bloque de HTML dos veces.
 
 function renderLinks(links) {
     return links.map(l => `
@@ -64,6 +73,10 @@ function renderCreativoCard(p) {
   `
 }
 
+// Tarjeta placeholder para proyectos de desarrollo aún no listos para
+// compartir (ver TODOs abajo) — mantiene la grilla visualmente completa
+// mientras se suman más proyectos con el tiempo.
+//
 // TODO: agregar la app de gestión de arriendos cuando esté lista para compartir.
 // TODO: agregar un proyecto de API/backend hecho en solitario (el de la Junta de
 // Vecinos del bootcamp fue un ejercicio grupal de clase, no se incluye aquí).

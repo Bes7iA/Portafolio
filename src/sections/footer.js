@@ -1,3 +1,7 @@
+// Pie de página con dos acciones: volver arriba (#btn-subir, ver
+// scrollTop en main.js si se agrega esa lógica) y el "easter egg" de
+// Salir/Sistema, que dispara el pantallazo azul (ver modules/errorScreen.js).
+
 export function renderFooter() {
     return `
     <footer class="max-w-7xl mx-auto mt-12 px-4 sm:px-8">
