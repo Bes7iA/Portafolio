@@ -30,8 +30,8 @@ document.querySelector('#app').innerHTML = `
   ${renderFooter()}
   ${renderErrorScreen()}
 
-  <audio id="reproductor-fantasma" src="/musica.mp3"></audio>
-  <audio id="sonido-impacto" src="/win-error.mp3"></audio>
+<audio id="reproductor-fantasma" src="${import.meta.env.BASE_URL}musica.mp3"></audio>
+<audio id="sonido-impacto" src="${import.meta.env.BASE_URL}win-error.mp3"></audio>
 `
 
 createIcons({ icons })

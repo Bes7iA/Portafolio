@@ -41,9 +41,9 @@ export function renderHero() {
             <div class="absolute inset-0 bg-black translate-x-2.5 translate-y-2.5"></div>
             <div class="relative bg-arcade-navy p-1.5 border-4 border-arcade-border shadow-[6px_6px_0px_#000000]">
               <div class="relative w-64 h-64 sm:w-72 sm:h-72 overflow-hidden group/avatar">
-                <img src="/foto1.png" alt="Angelo Patricio Sánchez Aceituno" class="w-full h-full object-cover block" />
-                <img src="/foto2.png" alt="Angelo Patricio Sánchez Aceituno - modo alternativo"
-                     class="absolute inset-0 w-full h-full object-cover opacity-0 blur-md scale-105 transition-all duration-300 ease-out group-hover/avatar:opacity-100 group-hover/avatar:blur-none group-hover/avatar:scale-100 pointer-events-none" />
+                <img src="${import.meta.env.BASE_URL}foto.png" alt="Angelo Patricio Sánchez Aceituno" class="w-full h-full object-cover block" />
+<img src="${import.meta.env.BASE_URL}foto-alt.png" alt="Angelo Patricio Sánchez Aceituno - modo alternativo"
+     class="absolute inset-0 w-full h-full object-cover opacity-0 blur-md scale-105 transition-all duration-700 ease-out group-hover/avatar:opacity-100 group-hover/avatar:blur-none group-hover/avatar:scale-100 pointer-events-none" />
               </div>
             </div>
           </div>
