@@ -16,7 +16,7 @@ Portafolio web personal. Sirve como carta de presentación online: da a conocer 
 | **GitHub Actions** | Automatiza el build y despliegue a GitHub Pages en cada push a `main` — no hay que subir manualmente una carpeta `dist/`. |
 
 ## Estructura del proyecto
-
+```
 ├── .github/workflows/deploy.yml → Automatización del despliegue (ver abajo)
 ├── public/ → Assets estáticos (fotos, audio, favicon):
 │ se copian tal cual al build final, sin pasar
@@ -32,7 +32,7 @@ Portafolio web personal. Sirve como carta de presentación online: da a conocer 
 │ (welcomeScreen, audioController, errorScreen) del contenido visual
 └── vite.config.js → Configuración de build (incluye la ruta
 base necesaria para GitHub Pages)
-
+```
 
 **Por qué esta separación:** cada sección del sitio (Hero, Sobre Mí, etc.) vive en
 su propio archivo, exportando una única función `render...()` que devuelve su
