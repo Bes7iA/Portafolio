@@ -21,8 +21,8 @@ export function renderHero() {
 
           <div class="p-5 bg-black/40 border-l-4 border-arcade-border space-y-3">
             <p class="text-base sm:text-lg text-arcade-text leading-relaxed">
-              Vengo de una trayectoria laboral muy variada — construcción, bodega, imprenta, biblioteca, entre otras — y hace poco decidí encaminar esa capacidad de adaptación hacia el desarrollo web. Hoy estoy terminando un bootcamp intensivo de JavaScript Full Stack, construyendo proyectos reales con Node, Express y bases de datos.
-            </p>
+               Vengo de una trayectoria laboral muy variada — construcción, bodega, imprenta, biblioteca, entre otras — que me enseñó a adaptarme rápido, resolver problemas con lo que hay a mano y responder bajo presión en equipo. Hace poco decidí encaminar esa misma disciplina hacia el desarrollo web: hoy estoy terminando un bootcamp intensivo de JavaScript Full Stack, construyendo proyectos reales con Node, Express y bases de datos.
+             </p>
             <p class="text-base sm:text-lg text-arcade-text leading-relaxed">
               <strong class="text-arcade-text-strong font-bold">Siempre dispuesto a aprender cosas nuevas.</strong>
             </p>
@@ -43,7 +43,7 @@ export function renderHero() {
               <div class="relative w-64 h-64 sm:w-72 sm:h-72 overflow-hidden group/avatar">
                 <img src="${import.meta.env.BASE_URL}foto1.png" alt="Angelo Patricio Sánchez Aceituno" class="w-full h-full object-cover block" />
 <img src="${import.meta.env.BASE_URL}foto2.png" alt="Angelo Patricio Sánchez Aceituno - modo alternativo"
-     class="absolute inset-0 w-full h-full object-cover opacity-0 blur-md scale-105 transition-all duration-300 ease-out group-hover/avatar:opacity-100 group-hover/avatar:blur-none group-hover/avatar:scale-100 pointer-events-none" />
+     class="absolute inset-0 w-full h-full object-cover opacity-0 blur-md scale-105 transition-all duration-400 ease-out group-hover/avatar:opacity-100 group-hover/avatar:blur-none group-hover/avatar:scale-100 pointer-events-none" />
               </div>
             </div>
           </div>

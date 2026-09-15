@@ -18,35 +18,35 @@ export function renderSobreMi() {
         <div class="lg:col-span-8 space-y-4">
           <div class="p-5 bg-black/40 border-2 border-arcade-cyan/50 shadow-[4px_4px_0px_#000000]">
             <p class="text-arcade-text text-base sm:text-lg mb-3">
-              "He tenido <strong class="text-arcade-text-strong font-bold">más trabajos que la Barbie</strong>, pasando desde construcción, reciclaje, seguridad, operario de imprenta, de bodega y fábrica de galletas, hasta limpieza y auxiliar de biblioteca entre otras."
+              "He tenido <strong class="text-arcade-text-strong font-bold">más trabajos que la Barbie</strong> — construcción, reciclaje, seguridad, operario de imprenta, bodega, fábrica de galletas, limpieza, auxiliar de biblioteca, entre otras. Cada uno me obligó a aprender rápido, resolver sobre la marcha y trabajar con gente distinta — la misma base que hoy aplico para aprender a programar."
             </p>
             <p class="text-arcade-text text-base sm:text-lg">
-              "Tengo <strong class="text-arcade-text-strong font-bold">inclinación por las artes</strong>; me gusta dibujar, escribir, diseñar videojuegos y juegos de mesa."
+              "Tengo <strong class="text-arcade-text-strong font-bold">inclinación por las artes</strong>: dibujar, escribir, diseñar videojuegos y juegos de mesa. Esa costumbre de imaginar sistemas y reglas desde cero se nota en cómo pienso la lógica de un programa — no es casualidad que mis primeros proyectos propios (ver Proyectos) sean juegos que diseñé yo mismo."
             </p>
           </div>
           <p class="text-xs font-mono text-arcade-cyan">
-            // Resiliencia probada: la variedad de experiencias previas forjó una capacidad inigualable de adaptación bajo presión y resolución práctica de problemas.
+            // Resiliencia y creatividad no son solo intereses paralelos: son las herramientas con las que resuelvo problemas técnicos.
           </p>
         </div>
 
         <div class="lg:col-span-4 grid grid-cols-2 gap-3">
           <div class="p-4 bg-black/50 border-2 border-arcade-border shadow-[3px_3px_0px_#000000] text-center space-y-1">
-            <span class="block text-2xl"><i data-lucide="palette" class="w-6 h-6 mx-auto"></i> </span>
+            <i data-lucide="palette" class="w-6 h-6 mx-auto"></i>
             <span class="block font-bold text-xs uppercase text-arcade-title">Dibujo &amp; Arte</span>
             <span class="block text-[11px] text-arcade-text">Creatividad visual</span>
           </div>
           <div class="p-4 bg-black/50 border-2 border-arcade-border shadow-[3px_3px_0px_#000000] text-center space-y-1">
-            <span class="block text-2xl"><i data-lucide="pen-tool" class="w-6 h-6 mx-auto"></i>  </span>
+            <i data-lucide="pen-tool" class="w-6 h-6 mx-auto"></i>
             <span class="block font-bold text-xs uppercase text-arcade-title">Escritura</span>
             <span class="block text-[11px] text-arcade-text">Narrativa y conceptos</span>
           </div>
           <div class="p-4 bg-black/50 border-2 border-arcade-border shadow-[3px_3px_0px_#000000] text-center space-y-1">
-            <span class="block text-2xl"><i data-lucide="gamepad-2" class="w-6 h-6 mx-auto"></i> </span>
+            <i data-lucide="gamepad-2" class="w-6 h-6 mx-auto"></i>
             <span class="block font-bold text-xs uppercase text-arcade-title">Videojuegos</span>
             <span class="block text-[11px] text-arcade-text">Game Design &amp; Lógica</span>
           </div>
           <div class="p-4 bg-black/50 border-2 border-arcade-border shadow-[3px_3px_0px_#000000] text-center space-y-1">
-            <span class="block text-2xl"><i data-lucide="dices" class="w-6 h-6 mx-auto"></i> </span>
+            <i data-lucide="dices" class="w-6 h-6 mx-auto"></i>
             <span class="block font-bold text-xs uppercase text-arcade-title">Juegos de Mesa</span>
             <span class="block text-[11px] text-arcade-text">Mecánicas y reglas</span>
           </div>

@@ -24,11 +24,11 @@ export function renderEstudios() {
           Aprendizaje Intensivo de JavaScript
         </h3>
         <p class="text-sm text-arcade-text leading-relaxed">
-          "Actualmente aprendiendo JavaScript, además de eso no tengo ningún otro estudio relevante, <strong class="text-arcade-text-strong font-bold">terminé la educación media en el 2005 y me puse a trabajar en lo que viniera de inmediato</strong>."
+          Estoy cursando un bootcamp intensivo de JavaScript Full Stack — todavía en curso. No tengo estudios formales previos en el área: terminé la educación media en 2005 y desde entonces aprendí <strong class="text-arcade-text-strong font-bold">trabajando, no en un aula</strong>. Ese mismo hábito de aprender haciendo es el que traigo hoy a la programación.
         </p>
         <div class="pt-3 border-t border-arcade-border/30 text-xs font-mono text-arcade-cyan flex items-center gap-2">
-          <span class="text-arcade-link"><i data-lucide="check-circle" class="w-4 h-4 text-arcade-link"></i></span>
-          <span>Autodidacta, constante y con enfoque pragmático en el código.</span>
+          <i data-lucide="check-circle" class="w-4 h-4 text-arcade-link"></i>
+          <span>Prefiero construir y equivocarme a memorizar teoría sin aplicarla.</span>
         </div>
       </div>
 

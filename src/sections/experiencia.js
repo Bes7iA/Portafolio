@@ -18,23 +18,23 @@ export function renderExperiencia() {
           BALANCE REAL
         </span>
         <p class="text-sm sm:text-base text-arcade-text leading-relaxed">
-          "Ninguna relevante a programación y desarrollo web, <strong class="text-arcade-text-strong font-bold">pero sí a trabajar en equipo, registro de metas y organizar tareas para entregar a tiempo</strong>."
+          Años de <strong class="text-arcade-text-strong font-bold">trabajo en equipo, cumplir plazos y organizar tareas bajo presión</strong>. Aun no tengo experiencia formal en trabajos relacionados a programación o desarrollo web; este portafolio y mis proyectos personales (ver Proyectos) son mi punto de partida, pero esa disciplina la traigo intacta a cualquier equipo de desarrollo.
         </p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <div class="p-3 bg-black/40 border-2 border-arcade-cyan text-center shadow-[2px_2px_0px_#000000]">
-          <span class="block text-xl mb-1"><i data-lucide="users" class="w-5 h-5 mx-auto mb-1"></i></span>
+          <i data-lucide="users" class="w-5 h-5 mx-auto mb-1"></i>
           <span class="block font-bold text-xs text-arcade-title">Trabajo en Equipo</span>
           <span class="text-[10px] text-arcade-text">Comunicación y empatía</span>
         </div>
         <div class="p-3 bg-black/40 border-2 border-arcade-link text-center shadow-[2px_2px_0px_#000000]">
-          <span class="block text-xl mb-1"><i data-lucide="target" class="w-5 h-5 mx-auto mb-1"></i></span>
+          <i data-lucide="target" class="w-5 h-5 mx-auto mb-1"></i>
           <span class="block font-bold text-xs text-arcade-title">Registro de Metas</span>
           <span class="text-[10px] text-arcade-text">Seguimiento claro</span>
         </div>
         <div class="p-3 bg-black/40 border-2 border-arcade-border text-center shadow-[2px_2px_0px_#000000]">
-          <span class="block text-xl mb-1"><i data-lucide="clock" class="w-5 h-5 mx-auto mb-1"></i></span>
+          <i data-lucide="clock" class="w-5 h-5 mx-auto mb-1"></i>
           <span class="block font-bold text-xs text-arcade-title">Entrega a Tiempo</span>
           <span class="text-[10px] text-arcade-text">Compromiso con fechas</span>
         </div>
