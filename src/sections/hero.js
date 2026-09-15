@@ -43,7 +43,7 @@ export function renderHero() {
               <div class="relative w-64 h-64 sm:w-72 sm:h-72 overflow-hidden group/avatar">
                 <img src="${import.meta.env.BASE_URL}foto1.png" alt="Angelo Patricio Sánchez Aceituno" class="w-full h-full object-cover block" />
 <img src="${import.meta.env.BASE_URL}foto2.png" alt="Angelo Patricio Sánchez Aceituno - modo alternativo"
-     class="absolute inset-0 w-full h-full object-cover opacity-0 blur-md scale-105 transition-all duration-700 ease-out group-hover/avatar:opacity-100 group-hover/avatar:blur-none group-hover/avatar:scale-100 pointer-events-none" />
+     class="absolute inset-0 w-full h-full object-cover opacity-0 blur-md scale-105 transition-all duration-300 ease-out group-hover/avatar:opacity-100 group-hover/avatar:blur-none group-hover/avatar:scale-100 pointer-events-none" />
               </div>
             </div>
           </div>
