@@ -9,7 +9,6 @@ const desarrollo = [
         ],
     },
 ]
-
 const creativos = [
     {
         titulo: 'La Torre',
