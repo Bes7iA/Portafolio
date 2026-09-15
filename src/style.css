@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+    /* Fondos (degradado principal de la página) */
+    --color-arcade-bg-1: #2a9bba;
+    --color-arcade-bg-2: #2f0045;
+
+    /* Texto */
+    --color-arcade-text: #f0ffb4;
+    --color-arcade-text-strong: #e2ff7a;
+
+    /* Títulos y acentos principales */
+    --color-arcade-title: #d0ff00;
+    --color-arcade-title-section: #279e8e;
+    --color-arcade-cyan: #4bfbe0;
+    --color-arcade-border: #ffdf0e;
+    --color-arcade-link: #1ef562;
+    --color-arcade-link-hover: #dcbcff;
+
+    /* Barra de navegación */
+    --color-arcade-navy: #111e5a;
+    --color-arcade-teal: #008e76;
+
+    /* Hover de botones/interacciones */
+    --color-arcade-aqua-hover: #00ffa6;
+
+    /* Estado de emergencia (botón salir / pantallazo) */
+    --color-arcade-emergency-bg: #3a0d0d;
+    --color-arcade-emergency-red: #ff0000;
+    --color-arcade-emergency-text: #00ffa6;
+
+    /* Fuentes */
+    --font-sans: "Space Grotesk", sans-serif;
+    --font-mono: "Space Mono", monospace;
+}
+
+body {
+    background: linear-gradient(135deg, #2a9bba 0%, #17425f 40%, #2f0045 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    color: var(--color-arcade-text);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 100px;
+}
+
+/* Capa del pantallazo azul, activada por :target */
+.capa-error-imagen {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000ae;
+    z-index: 99999;
+    cursor: default;
+    user-select: none;
+}
+
+.capa-error-imagen:target {
+    display: block;
+}
+
+/* Oculta la pantalla de bienvenida una vez que el sistema arrancó */
+.sistema-encendido #pantalla-bienvenida {
+    display: none;
+}
+
+/* Animación de la transición de barrido diagonal */
+::view-transition-group(root) {
+    animation-duration: 1.6s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+::view-transition-new(root) {
+    animation-name: reveal-light;
+    animation-fill-mode: both;
+}
+
+::view-transition-old(root) {
+    animation: none;
+    animation-fill-mode: both;
+    z-index: -1;
+}
+
+::view-transition-new(root),
+::view-transition-old(root) {
+    pointer-events: none !important;
+}
+
+@keyframes reveal-light {
+    from {
+        clip-path: polygon(171% 50%, 50% 171%, 50% 171%, 171% 50%);
+    }
+    to {
+        clip-path: polygon(171% 50%, 50% 171%, -50% 71%, 50% -71%);
+    }
+}
