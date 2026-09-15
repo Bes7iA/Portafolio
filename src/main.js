@@ -40,3 +40,4 @@ initMobileMenu()
 initAudio()
 initWelcomeScreen(reproducirMusica)
 initErrorScreen()
+
