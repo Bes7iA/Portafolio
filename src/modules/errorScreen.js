@@ -6,6 +6,8 @@
 // cuando la URL cambia a "#error-fatal" (el link del botón "Salir" en
 // footer.js apunta ahí). JavaScript solo se encarga del efecto de sonido.
 
+import { activarFallaSistema } from './audioController.js'
+
 export function renderErrorScreen() {
     return `
     <div id="error-fatal" class="capa-error-imagen">

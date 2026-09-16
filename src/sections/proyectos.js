@@ -9,7 +9,7 @@ const desarrollo = [
         estado: 'Proyecto propio',
         desc: 'Adaptación web de un juego de mesa de estrategia por turnos diseñado por mí, aplicando modularización y estándares ES6 con apoyo de inteligencia artificial.',
         links: [
-            { label: 'Repositorio', url: 'https://github.com/Bes7iA/MG', icon: 'github' },
+            { label: 'Repositorio', url: 'https://github.com/Bes7iA/MG', icon: 'code-2' },
             { label: 'Jugar ahora', url: 'https://bes7ia.github.io/MG/', icon: 'play' },
         ],
     },

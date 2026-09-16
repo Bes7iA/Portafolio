@@ -3,7 +3,7 @@ import { createIcons, icons } from 'lucide'
 import { renderNavbar } from './sections/navbar.js'
 import { renderHero } from './sections/hero.js'
 import { renderSobreMi } from './sections/sobre-mi.js'
-import { renderEstudios } from './sections/estudios.js'
+import { renderFormacion } from './sections/formacion.js'
 import { renderExperiencia } from './sections/experiencia.js'
 import { renderProyectos } from './sections/proyectos.js'
 import { renderHabilidades } from './sections/habilidades.js'
@@ -13,6 +13,7 @@ import { renderWelcomeScreen, initWelcomeScreen } from './modules/welcomeScreen.
 import { renderErrorScreen, initErrorScreen } from './modules/errorScreen.js'
 import { initAudio, reproducirMusica } from './modules/audioController.js'
 import { initMobileMenu } from './modules/mobileMenu.js'
+import { renderCertModal, initCertModal } from './modules/certModal.js'
 
 document.querySelector('#app').innerHTML = `
   ${renderWelcomeScreen()}
@@ -21,15 +22,16 @@ document.querySelector('#app').innerHTML = `
     ${renderHero()}
     ${renderSobreMi()}
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      ${renderEstudios()}
+      ${renderFormacion()}
       ${renderExperiencia()}
     </div>
     ${renderProyectos()}
     ${renderHabilidades()}
     ${renderContacto()}
   </main>
-  ${renderFooter()}
+    ${renderFooter()}
   ${renderErrorScreen()}
+  ${renderCertModal()}
 
 <audio id="reproductor-fantasma" src="${import.meta.env.BASE_URL}musica.mp3"></audio>
 <audio id="sonido-impacto" src="${import.meta.env.BASE_URL}win-error.mp3"></audio>
@@ -40,4 +42,6 @@ initMobileMenu()
 initAudio()
 initWelcomeScreen(reproducirMusica)
 initErrorScreen()
+initCertModal()
+
 

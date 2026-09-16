@@ -28,8 +28,8 @@ export function renderNavbar() {
           <a href="#sobre-mi" class="text-arcade-text hover:text-arcade-link-hover transition-colors">
             <span class="text-arcade-border">01.</span> Sobre Mí
           </a>
-          <a href="#estudios" class="text-arcade-text hover:text-arcade-link-hover transition-colors">
-            <span class="text-arcade-border">02.</span> Estudios
+          <a href="#formacion" class="text-arcade-text hover:text-arcade-link-hover transition-colors">
+            <span class="text-arcade-border">02.</span> Formacion
           </a>
           <a href="#experiencia" class="text-arcade-text hover:text-arcade-link-hover transition-colors">
             <span class="text-arcade-border">03.</span> Experiencia
