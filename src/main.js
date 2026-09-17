@@ -14,6 +14,7 @@ import { renderErrorScreen, initErrorScreen } from './modules/errorScreen.js'
 import { initAudio, reproducirMusica } from './modules/audioController.js'
 import { initMobileMenu } from './modules/mobileMenu.js'
 import { renderCertModal, initCertModal } from './modules/certModal.js'
+import { renderContactModal, initContactModal } from './modules/contactModal.js'
 
 document.querySelector('#app').innerHTML = `
   ${renderWelcomeScreen()}
@@ -32,6 +33,8 @@ document.querySelector('#app').innerHTML = `
     ${renderFooter()}
   ${renderErrorScreen()}
   ${renderCertModal()}
+  ${renderCertModal()}
+${renderContactModal()}
 
 <audio id="reproductor-fantasma" src="${import.meta.env.BASE_URL}musica.mp3"></audio>
 <audio id="sonido-impacto" src="${import.meta.env.BASE_URL}win-error.mp3"></audio>
@@ -43,5 +46,6 @@ initAudio()
 initWelcomeScreen(reproducirMusica)
 initErrorScreen()
 initCertModal()
+initContactModal()
 
 

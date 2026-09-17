@@ -43,17 +43,24 @@ export function renderHero() {
           </div>
         </div>
 
-        <div class="lg:col-span-4 flex justify-center items-center">
-          <div class="relative group">
-            <div class="absolute inset-0 bg-black translate-x-2.5 translate-y-2.5"></div>
-            <div class="relative bg-arcade-navy p-1.5 border-4 border-arcade-border shadow-[6px_6px_0px_#000000]">
-              <div class="relative w-64 h-64 sm:w-72 sm:h-72 overflow-hidden group/avatar">
-                <img src="${import.meta.env.BASE_URL}foto1.png" alt="Angelo Patricio Sánchez Aceituno" class="w-full h-full object-cover block" />
-<img src="${import.meta.env.BASE_URL}foto2.png" alt="Angelo Patricio Sánchez Aceituno - modo alternativo"
-     class="absolute inset-0 w-full h-full object-cover opacity-0 blur-md scale-105 transition-all duration-400 ease-out group-hover/avatar:opacity-100 group-hover/avatar:blur-none group-hover/avatar:scale-100 pointer-events-none" />
-              </div>
-            </div>
-          </div>
+        <div class="lg:col-span-4 flex flex-col justify-center items-center gap-4">
+  <div class="relative group">
+    <div class="absolute inset-0 bg-black translate-x-2.5 translate-y-2.5"></div>
+    <div class="relative bg-arcade-navy p-1.5 border-4 border-arcade-border shadow-[6px_6px_0px_#000000]">
+      <div class="relative w-64 h-64 sm:w-72 sm:h-72 overflow-hidden group/avatar">
+        <img src="${import.meta.env.BASE_URL}foto2.png" alt="Angelo Patricio Sánchez Aceituno" class="w-full h-full object-cover block" />
+        <img src="${import.meta.env.BASE_URL}foto1.png" alt="Angelo Patricio Sánchez Aceituno - modo alternativo"
+             class="absolute inset-0 w-full h-full object-cover opacity-0 blur-md scale-105 transition-all duration-700 ease-out group-hover/avatar:opacity-100 group-hover/avatar:blur-none group-hover/avatar:scale-100 pointer-events-none" />
+      </div>
+    </div>
+  </div>
+
+  <a href="${import.meta.env.BASE_URL}CV_Angelo_Sanchez.pdf" download
+     class="bg-arcade-title text-black border-[3px] border-black shadow-[4px_4px_0px_#000000] font-black uppercase text-sm px-6 py-3 flex items-center gap-2 transition-all duration-150 hover:bg-arcade-aqua-hover hover:shadow-[2px_2px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5">
+    <i data-lucide="download" class="w-4 h-4"></i>
+    Descargar CV
+  </a>
+</div>
         </div>
 
       </div>
